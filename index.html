@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="display-result" id="display"></div>
+      <div class="input-button">
+        <div class="row">
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(7)">
+              7
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(8)">
+              8
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(9)">
+              9
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button" onclick="del()">DEL</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(4)">
+              4
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(5)">
+              5
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(6)">
+              6
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-oprator" onclick="setOperator('add')">
+              +
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(1)">
+              1
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(2)">
+              2
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(3)">
+              3
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-oprator" onclick="setOperator('minus')">
+              -
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button-wrapped">
+            <button class="button btn-number" onclick="addNumber(0)">
+              0
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button" onclick="addNumber('.')">.</button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button btn-oprator" onclick="setOperator('divide')">
+              /
+            </button>
+          </div>
+          <div class="button-wrapped">
+            <button
+              class="button btn-oprator"
+              onclick="setOperator('multiply')"
+            >
+              x
+            </button>
+          </div>
+        </div>
+        <div class="row bottom" id="display">
+          <div class="button-wrapped">
+            <button class="button" onclick="clr()">C</button>
+          </div>
+          <div class="button-wrapped">
+            <button class="button" onclick="equal()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
